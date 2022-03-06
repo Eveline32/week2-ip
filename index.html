@@ -2,78 +2,54 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Web-App</title>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/ghana.png" type="img/jpg">
+    <link rel="stylesheet" href="/css/bootstrap.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Ankan Names</h1>
-        <p><em>This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Names.Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born</em></p>
-        <p>Here are Ghanian day names:</p>
-        <div class="row">
-          <div class="col-md-6">
-          <h3>Male</h3>
-          <ol>
-            <li>Sunday: Kwasi</li>
-            <li>Monday: Kwadwo</li>
-            <li>Tuesday: Kwabena</li>
-            <li>Wednesday: Kwaku</li>
-            <li>Thursday:  Yaw</li>
-            <li>Friday: Kofi</li>
-            <li>Saturday: Kwame</li>
-          </ol>
-        </div>
 
-
-
-        <div class="col-md-6">
-          <h3>Female</h3>
-          <ol>
-            <li>Sunday: Akosua</li>
-								<li>Monday: Adwoa</li>
-								<li>Tuesday: Abenaa</li>
-								<li>Wednesday: Akua</li>
-								<li>Thursday:  Yaa</li>
-								<li>Friday: Afua</li>
-								<li>Saturday: Ama</li>
-          </ol>
-
-        </div>
-          </div>
+      <div class="container">
+        <h1>Akan name generator!</h1>
+        <p>This is a web application that takes your birthday details and calculates the day of the week you were born and then depending on your gender, outputs your Akan Name.Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. </p>
+        <p>To find out what your Akan name is, proceed to filling the form below and clicking the generate name button.
         <form class="myform" onsubmit="return getAkanName()">
           <label for="year-of-birth">
-              Year:
-              <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
-            </label>
-            <label for="month-of-birth">
-              Month
-              <input id="month-input" type="number" name="month-of-bith" value="" placeholder="MM"required>
-            </label>
-            <label for="day-of-birth">
+            Year:
+            <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+          </label>
+          <label for="month-of-birth">
+            Month:
+            <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+          </label>
+          <label for="day-of-birth">
             Day:
             <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
           </label>
-            <br><br>
-            <label for="gender">
-              <p><strong>Select your gender:</strong></p>
-              Female
-              <input id="female-input" type="radio" name="gender" value="female"required>
-              <br>
-              Male
-              <input id="male-input"type="radio" name="gender" value="male"required>
-            </label>
-            <br><br>
-            <input id="get-name"type="submit" name="" value="Generate name">
+          <br><br>
+          <label for="gender">
+            <p><strong>Select your gender:</strong> </p>
+            Male
+            <input id="male-input" type="radio" name="gender" value="male" required>
+            Female
+            <input id="female-input" type="radio" name="gender" value="female" required>
+
+          </label>
+          <br><br>
+          <input id="get-name" type="submit" name="" value="Generate name">
+          <br><br>
         </form>
-        <br><br>
         <form onsubmit="return clearInput()">
           <input class="clear" type="submit" value="Clear input">
         </form>
-        <h4 id="display-name"><strong>Your Akan name will be displayed below:</strong></h4>
-        <p id="result"></p>
 
-  </div>
-   <script src="script/script.js" ></script>
+        <h4 id = display-name><strong>Your Akan name will be displayed below:</strong></h4>
+        <p id="result"></p>
+      </div>
+
+
+    <script src="script/script.js" ></script>
+
   </body>
 </html>
