@@ -1,12 +1,8 @@
 
 h1 {
-  color: white;
+  color: black;
   text-align: center;
 }
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  float: center;
+.container {
+  background-color: lightblue;
 }
