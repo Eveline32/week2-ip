@@ -30,7 +30,7 @@ Here is a run through of how to set up the application
 * HTML  
 * CSS
 * Javascript
-* Bootstrap
+
 
 ## Support and contact details
 You can provide feedback or raise any issues through my email
